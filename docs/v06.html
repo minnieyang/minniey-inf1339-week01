@@ -22,8 +22,8 @@
        function dec2bin(decimal) {
            //substitute a non-algorithmic solution
            //for the short term (we'll replace it later)
-           var binary= ['0000','0001','0010','0011','0100','0101','0110','0111','1000','1001']
-           return (binary[decimal])
+           var binary_numbers= ['0000','0001','0010','0011','0100','0101','0110','0111','1000','1001']
+           return (binary_numbers[decimal])
        }
        function dec2bin2 (decimal) {
            var quotient = decimal
@@ -40,7 +40,7 @@
                //always Math.something
                quotient = Math.floor(quotient/2)
            }
-           while (output.length <4) {output = 'o' + output}
+           while (output.length <4) {output = '0' + output}
            return(output)
        }
         
